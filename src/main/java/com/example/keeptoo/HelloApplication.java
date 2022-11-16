@@ -1,9 +1,12 @@
 package com.example.keeptoo;
 
+import com.example.keeptoo.controllers.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -18,6 +21,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/main.fxml")));
         Scene scene = new Scene(root);
+        MainController.pStage = stage;
 
 
 
@@ -34,6 +38,13 @@ public class HelloApplication extends Application {
         });
 
         stage.setScene(scene);
+        for (Screen screen : Screen.getScreens()) {
+            Rectangle2D bounds = screen.getBounds();
+            double x = bounds.getMinX() + (bounds.getWidth() - scene.getWidth()) * 0.2;
+            double y = bounds.getMinY() + (bounds.getHeight() - scene.getHeight()) * 0.2;
+            stage.setX(x);
+            stage.setY(y);
+        }
         stage.show();
     }
 

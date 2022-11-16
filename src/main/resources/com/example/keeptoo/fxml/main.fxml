@@ -202,16 +202,16 @@
                                                 <Font name="Berlin Sans FB" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="87.0" styleClass="button2" text="Add New" textFill="#52438f">
+                                          <Button mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="87.0" styleClass="button2" text="Add New" textFill="#52438f">
                                              <font>
                                                 <Font size="14.0" />
                                              </font></Button>
-                                          <Button fx:id="btnImport" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="141.0" styleClass="button2" text="Import Admins" textFill="#52438f">
+                                          <Button mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="141.0" styleClass="button2" text="Import Admins" textFill="#52438f">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
                                           </Button>
-                                          <Button fx:id="btnExport" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="178.0" styleClass="button2" text="Export Admins (Excel)" textFill="#52438f">
+                                          <Button mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="33.0" prefWidth="178.0" styleClass="button2" text="Export Admins (Excel)" textFill="#52438f">
                                              <font>
                                                 <Font size="14.0" />
                                              </font>
